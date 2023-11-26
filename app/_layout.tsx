@@ -4,6 +4,10 @@ import { useFonts } from 'expo-font';
 import { SplashScreen, Stack } from 'expo-router';
 import { useEffect } from 'react';
 import { useColorScheme } from 'react-native';
+// not compatible with expo cli
+import { Amplify } from 'aws-amplify';
+import amplifyconfig from '../src/amplifyconfiguration.json';
+Amplify.configure(amplifyconfig);
 
 export {
   // Catch any errors thrown by the Layout component.
