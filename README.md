@@ -13,3 +13,6 @@ import { Amplify } from 'aws-amplify';
 import amplifyconfig from '../src/amplifyconfiguration.json';
 Amplify.configure(amplifyconfig);
 `
+
+amplify v6 is not currently compatible with expo go to run application use command:
+`bun expo run:ios`
